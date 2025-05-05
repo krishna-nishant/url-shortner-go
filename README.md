@@ -6,16 +6,17 @@ A complete URL shortener application built with Go, featuring a modern UI.
 
 - Create shortened URLs from long URLs
 - Track click statistics for each shortened URL
-- Modern, responsive UI
+- Modern, responsive UI with smooth animations
 - Copy shortened URLs to clipboard with one click
 - View list of all shortened URLs with statistics
 - Persistent storage using JSON files
+
 
 ## Technology Stack
 
 - **Backend**: Go with Gin web framework
 - **Storage**: In-memory with JSON file persistence
-- **Frontend**: HTML, CSS, JavaScript with Bootstrap 5
+- **Frontend**: HTML, CSS, JavaScript with Tailwind CSS
 
 ## Project Structure
 
@@ -26,7 +27,7 @@ A complete URL shortener application built with Go, featuring a modern UI.
   - `index.html` - Main page template
   - `404.html` - Not found error page
 - `static/` - Static assets
-  - `css/style.css` - Custom styles
+  - `css/style.css` - Custom styles and animations
   - `js/app.js` - Frontend JavaScript
 
 ## How to Launch
@@ -45,7 +46,7 @@ A complete URL shortener application built with Go, featuring a modern UI.
    ```
    go run main.go
    ```
-5. Visit http://localhost:8080 in your browser
+5. Visit http://localhost:9000 in your browser
 
 ## API Endpoints
 
@@ -54,3 +55,12 @@ A complete URL shortener application built with Go, featuring a modern UI.
 - `GET /:shortURL` - Redirect to original URL
 - `GET /api/urls` - Get all URLs
 
+## Planned Enhancements
+
+- [ ] URL validation
+- [ ] QR code generation for shortened URLs
+- [ ] Rate limiting to prevent abuse
+- [ ] Custom short URLs (allow users to choose their own short code)
+- [ ] Advanced analytics dashboard for URL statistics
+- [ ] Expiration date for short URLs
+- [ ] User authentication for managing personal URLs
